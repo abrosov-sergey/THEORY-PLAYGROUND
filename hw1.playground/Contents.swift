@@ -1,4 +1,5 @@
 import UIKit
+import Foundation
 //
 //// MARK: - HW03
 ///* 1) Вывести значения диапазона данных типа
@@ -116,14 +117,28 @@ import UIKit
 //
 //print("seconds before my birth is equal to: \(cntSecondsInDay * (6 * 31 + 1 * 30 * 1 * 28))")
 
-enum Item {
-    case weapon(Int, Int)
-    case food
-    case armor(Int, Int, Double)
+//enum Item {
+//    case weapon(Int, Int)
+//    case food
+//    case armor(Int, Int, Double)
+//}
+//
+//var sword = Item.weapon(10, 5)
+//
+//print(type(of: Item.weapon(10, 5)))
+//
+//print(type(of: Item.food))
+
+
+
+// MARK: - Closure
+
+var newClouser: (Double, Double) -> Double
+
+func plus(a: Double, b: Double) -> Double
+{
+    return a + b
 }
- 
-var sword = Item.weapon(10, 5)
 
-print(type(of: Item.weapon(10, 5)))
+var mainClouser: (Double, (Double, Double) -> Double) -> Void
 
-print(type(of: Item.food))
